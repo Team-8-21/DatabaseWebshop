@@ -13,9 +13,7 @@ namespace DatabaseWebshop.Model
         public string LastName { get; set; }
         public string StreetName { get; set; }
         public int HouseNumber { get; set; }
-        public int ZipCode { get; set; }
-
-        public List<Order> Orders { get; set; } = new(); // Navigation til ordrer
+        public int ZipCode { get; set; }   
 
        
     }

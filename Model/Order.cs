@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseWebshop.Model
 {
-    public class Order : Customer
+    public class Order
     {
         public int OrderId { get; set; }
         
@@ -15,7 +15,9 @@ namespace DatabaseWebshop.Model
         public double Total { get; set; }
 
         public int CustomerID { get; set; } // Fremmednøgle
-        public Customer Customer { get; set; } // Navigation til Customer
+
+        // public Customer customer { get; set; } En anden mulighed, men henter en HEL Customer Object og kan være overflødigt. 
+
 
 
     }
